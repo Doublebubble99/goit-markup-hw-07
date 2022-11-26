@@ -1,0 +1,17 @@
+%footer-title {
+  display: block;
+  text-align: start;
+  font-weight: $bold;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: take-color("white");
+  margin-bottom: 20px;
+  align-items: baseline;
+}
+%title {
+  font-weight: $bold;
+  font-size: $large;
+  line-height: calc(42 / 36);
+  text-align: center;
+  color: take-color("dark-black");
+}
