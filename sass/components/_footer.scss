@@ -46,7 +46,9 @@
   margin-bottom: 40px;
   margin-right: 93px;
   &__title {
-    @extend %footer-title;
+    display: flex;
+    @include subtitle(take-color("white"));
+    margin-bottom: 20px;
   }
 }
 .social-list {
@@ -60,7 +62,9 @@
 .subscribe-container {
   display: inline-block;
   &__title {
-    @extend %footer-title;
+    display: flex;
+    @include subtitle(take-color("white"));
+    margin-bottom: 20px;
   }
 }
 .footer-form {
@@ -83,23 +87,13 @@
     }
   }
   &__button {
+    @include button();
+    display: inline-flex;
     width: 200px;
     height: 50px;
-    background-color: take-color("blue");
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
     cursor: pointer;
-    align-items: center;
     justify-content: space-around;
-    font-weight: $bold;
-    font-size: $small;
-    line-height: calc(30 / 16);
-    display: inline-flex;
-    text-align: center;
     padding: 10px 28px;
-    letter-spacing: 0.06em;
-    color: take-color("white");
-    font-family: inherit;
     border: transparent;
   }
   &__icon {

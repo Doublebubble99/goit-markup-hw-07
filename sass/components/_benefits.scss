@@ -1,9 +1,6 @@
 .benefits {
   &__subtitle {
-    font-weight: $bold;
-    line-height: calc(16 / 14);
-    text-transform: uppercase;
-    color: take-color("dark-black");
+    @include subtitle(take-color("dark-black"));
     margin-bottom: 10px;
   }
   &__text {
